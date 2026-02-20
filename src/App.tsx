@@ -6,6 +6,7 @@ function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<></>} />
+        <Route path="/:pid" element={<></>} />
       </Route>
     </Routes>
   );

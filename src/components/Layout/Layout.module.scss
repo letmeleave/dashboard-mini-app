@@ -4,15 +4,29 @@
 .container {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  height: $spacing-lg;
+  width: 100%;
+  background-color: $primary-color;
+  color: $light-gray;
+  text-align: center;
+  box-shadow: 0 -2px 20px 3px $dark-gray;
 }
 
-.main {
+.mainContainer {
+  height: 100%;
+  padding: $spacing-md $spacing-xl 0 $spacing-xl;
+
+  > .main {
+    height: 100%;
+  }
 }
 
 .footer {
-  height: $spacing-md;
+  height: $spacing-xl;
+  width: 100%;
+  text-align: center;
 }

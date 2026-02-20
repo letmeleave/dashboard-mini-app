@@ -1,2 +1,29 @@
-@forward "@/assets/styles/variables";
-@forward "@/assets/styles/mixins";
+@use "variables" as *;
+@use "mixins" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  color: $text-color;
+  line-height: 1.6;
+  background-color: $light-gray;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
