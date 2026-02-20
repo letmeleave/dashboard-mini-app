@@ -1,0 +1,6 @@
+@use "@/assets/styles/variables" as *;
+
+.container {
+  display: flex;
+  gap: $spacing-sm;
+}
