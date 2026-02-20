@@ -1,0 +1,18 @@
+@use "@/assets/styles/variables" as *;
+@use "@/assets/styles/mixins" as *;
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  height: $spacing-lg;
+}
+
+.main {
+}
+
+.footer {
+  height: $spacing-md;
+}

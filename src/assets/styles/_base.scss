@@ -14,20 +14,16 @@ body {
   background-color: $light-gray;
 }
 
-#app {
-  min-height: 100vh;
-}
+// .container {
+//   width: 100%;
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 0 $spacing-md;
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 $spacing-md;
-
-  @include responsive(md) {
-    padding: 0 $spacing-lg;
-  }
-}
+//   @include responsive(md) {
+//     padding: 0 $spacing-lg;
+//   }
+// }
 
 a {
   color: $primary-color;
