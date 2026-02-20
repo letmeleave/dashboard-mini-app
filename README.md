@@ -19,7 +19,7 @@
 
 1. `git clone https://github.com/letmeleave/dashboard-mini-app.git`
 2. `cd dashboard-mini-app`
-3. `npm i`
+3. `npm ci`
 4. `npm run dev`
 
 ---
