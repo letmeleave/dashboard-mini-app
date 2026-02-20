@@ -18,9 +18,24 @@
 
 .mainContainer {
   height: 100%;
-  padding: $spacing-md $spacing-xl 0 $spacing-xl;
+  padding: $spacing-sm;
 
-  > .main {
+  @include responsive(md) {
+    padding: $spacing-md;
+  }
+
+  @include responsive(lg) {
+    padding: $spacing-lg;
+  }
+
+  @include responsive(xl) {
+    padding: $spacing-xl;
+    padding-top: $spacing-lg;
+  }
+
+  padding-bottom: 0;
+
+  > main {
     height: 100%;
   }
 }

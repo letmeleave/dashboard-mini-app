@@ -10,7 +10,7 @@ const Layout: FC = () => {
         <h1>Mini-App</h1>
       </header>
       <div className={styles.mainContainer}>
-        <main className={styles.main}>
+        <main>
           <Outlet />
         </main>
       </div>
