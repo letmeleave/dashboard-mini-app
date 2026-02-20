@@ -17,8 +17,8 @@
 
 ### How to start
 
-1. `git clone github.com/letmeleave/...`
-2. `cd ...`
+1. `git clone https://github.com/letmeleave/dashboard-mini-app.git`
+2. `cd dashboard-mini-app`
 3. `npm i`
 4. `npm run dev`
 
