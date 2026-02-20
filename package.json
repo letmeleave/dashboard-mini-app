@@ -1,0 +1,20 @@
+{
+  "name": "dashboard-assesment",
+  "version": "1.0.0",
+  "description": "Tiny React app that lists items (e.g., “Projects” or “Tasks”), supports a search filter, shows an item details view via routing, and uses one custom hook for data access (mocked locally)",
+  "homepage": "https://github.com/letmeleave/dashboard-mini-app#readme",
+  "bugs": {
+    "url": "https://github.com/letmeleave/dashboard-mini-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letmeleave/dashboard-mini-app.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
