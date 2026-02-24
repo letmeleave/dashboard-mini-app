@@ -14,7 +14,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ name, description, id }) => {
   return (
     <div
       onClick={() => {
-        navigate(id);
+        navigate(`/projects/${id}`);
       }}
       className={styles.container}
     >
