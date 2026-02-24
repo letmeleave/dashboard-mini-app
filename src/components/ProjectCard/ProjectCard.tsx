@@ -1,6 +1,7 @@
 import type { FC } from "react";
 
 import styles from "./ProjectCard.module.scss";
+import { useNavigate } from "react-router";
 
 export interface ProjectCardProps {
   name: string;
@@ -8,9 +9,15 @@ export interface ProjectCardProps {
   id: number;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ name, description }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ name, description, id }) => {
+  const navigate = useNavigate();
   return (
-    <div className={styles.container}>
+    <div
+      onClick={() => {
+        navigate(id);
+      }}
+      className={styles.container}
+    >
       <h3>{name}</h3>
       <p>{description}</p>
     </div>

@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />{" "}
         <Route path="/project/:pid" element={<></>} />
+        <Route path="/404" element={<PageNotFound />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

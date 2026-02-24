@@ -68,8 +68,8 @@ const ProjectsList = ({ search }: ProjectsListProps) => {
     <div className={styles.container}>
       <ul className={styles.list}>
         {projects.map((project) => (
-          <li>
-            <ProjectCard {...project} key={project.id} />
+          <li key={project.id}>
+            <ProjectCard {...project} />
           </li>
         ))}
       </ul>
