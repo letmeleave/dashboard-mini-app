@@ -9,39 +9,14 @@ interface ProjectsListProps {
 }
 
 const ProjectsList = ({ search }: ProjectsListProps) => {
-  const {
-    projects,
-    loading,
-    loadingMore,
-    error,
-    hasMore,
-    loadMore,
-    refetch,
-    handleSearch,
-  } = useProjects(20, true);
+  const { projects, loading, error, refetch, handleSearch } = useProjects(
+    20,
+    true,
+  );
 
   useEffect(() => {
     handleSearch(search);
   }, [search, handleSearch]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = document.documentElement.scrollTop;
-      const scrollHeight = document.documentElement.scrollHeight;
-      const clientHeight = document.documentElement.clientHeight;
-
-      if (
-        scrollTop + clientHeight >= scrollHeight - 100 &&
-        !loadingMore &&
-        hasMore
-      ) {
-        loadMore();
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [loadingMore, hasMore, loadMore]);
 
   if (loading && projects.length === 0) {
     return (
