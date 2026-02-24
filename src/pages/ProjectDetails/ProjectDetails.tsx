@@ -25,9 +25,11 @@ const ProjectDetails = () => {
     load();
   }, [id]);
 
-  if (error) {
-    navigate("/404");
-  }
+  useEffect(() => {
+    if (error) {
+      navigate("/404");
+    }
+  }, [error, navigate]);
 
   if (!project) {
     return (
@@ -36,6 +38,7 @@ const ProjectDetails = () => {
       </Layout>
     );
   }
+  console.log(error);
 
   return (
     <Layout title="Project Details">

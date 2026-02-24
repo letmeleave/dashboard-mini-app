@@ -14,6 +14,6 @@ export const getProjectById = async (
     }
     return response;
   } catch (err) {
-    return err as Error;
+    throw err as Error;
   }
 };
