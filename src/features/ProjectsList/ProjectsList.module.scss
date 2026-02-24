@@ -1,0 +1,28 @@
+@use "@/assets/styles/mixins" as *;
+@use "@/assets/styles/variables" as *;
+
+.container {
+  width: 100%;
+  margin-top: $spacing-lg;
+}
+
+.list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  list-style: none;
+
+  > li {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.error {
+  @include flex-center;
+}
+
+.loader {
+  @include flex-center;
+}

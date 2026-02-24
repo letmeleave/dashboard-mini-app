@@ -1,2 +1,14 @@
 @use "@/assets/styles/variables" as *;
 @use "@/assets/styles/mixins" as *;
+
+.container {
+  width: 220px;
+  height: 280px;
+  border-radius: 6px;
+  border: 1px solid $dark-gray;
+  display: block;
+  padding: $spacing-sm;
+  :hover {
+    cursor: pointer;
+  }
+}

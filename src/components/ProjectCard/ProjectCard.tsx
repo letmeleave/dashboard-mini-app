@@ -1,12 +1,20 @@
 import type { FC } from "react";
 
-interface ProjectCardProps {
+import styles from "./ProjectCard.module.scss";
+
+export interface ProjectCardProps {
   name: string;
   description: string;
+  id: number;
 }
 
 const ProjectCard: FC<ProjectCardProps> = ({ name, description }) => {
-  return <div></div>;
+  return (
+    <div className={styles.container}>
+      <h3>{name}</h3>
+      <p>{description}</p>
+    </div>
+  );
 };
 
 export default ProjectCard;
