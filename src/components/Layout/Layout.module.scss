@@ -6,6 +6,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .header {
@@ -41,6 +42,8 @@
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
   height: $spacing-xl;
   width: 100%;
   text-align: center;
