@@ -1,6 +1,23 @@
 @use "@/assets/styles/variables" as *;
+@use "@/assets/styles/mixins" as *;
 
 .container {
   display: flex;
+  justify-content: center;
   gap: $spacing-sm;
+  height: $spacing-xl;
+
+  > label {
+    display: none;
+    @include responsive(sm) {
+      display: block;
+      font-size: 18px;
+    }
+  }
+
+  > input {
+    padding: $spacing-xs;
+    width: 240px;
+    font-size: 16px;
+  }
 }

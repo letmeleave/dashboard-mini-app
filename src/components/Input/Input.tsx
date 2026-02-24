@@ -6,11 +6,22 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
 }
 
-const Input: FC<InputProps> = ({ name, label, onChange, value }) => {
+const Input: FC<InputProps> = ({
+  name,
+  label,
+  onChange,
+  value,
+  placeholder = "search",
+}) => {
   return (
     <div className={styles.container}>
       <label htmlFor={name}>{label}</label>
-      <input id={name} onChange={onChange} value={value} />
+      <input
+        id={name}
+        onChange={onChange}
+        value={value}
+        placeholder={placeholder}
+      />
     </div>
   );
 };

@@ -1,0 +1,10 @@
+@use "@/assets/styles/mixins" as *;
+@use "@/assets/styles/variables" as *;
+
+.container {
+  @include flex-center;
+  flex-direction: column;
+  gap: $spacing-md;
+  height: 100vh;
+  transform: translateY(-50px);
+}

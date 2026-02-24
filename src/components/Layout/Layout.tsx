@@ -1,18 +1,20 @@
-import type { FC } from "react";
-import { Outlet } from "react-router";
+import type { FC, ReactNode } from "react";
 
 import styles from "./Layout.module.scss";
 
-const Layout: FC = () => {
+interface LayoutProps {
+  title?: string;
+  children: ReactNode;
+}
+
+const Layout: FC<LayoutProps> = ({ title = "Mini App", children }) => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>Mini-App</h1>
+        <h1>{title}</h1>
       </header>
       <div className={styles.mainContainer}>
-        <main>
-          <Outlet />
-        </main>
+        <main>{children}</main>
       </div>
       <footer className={styles.footer}>
         <a
